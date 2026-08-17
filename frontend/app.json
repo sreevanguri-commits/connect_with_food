@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Connect with Food",
+    "slug": "connect-with-food",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.connectwithfood.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to find food donations near you"
+      }
+    },
+    "android": {
+      "package": "com.connectwithfood.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermissions": "Allow $(PRODUCT_NAME) to use your location"
+        }
+      ]
+    ]
+  }
+}
